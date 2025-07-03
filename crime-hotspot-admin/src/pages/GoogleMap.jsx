@@ -1,12 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const GoogleMap = ({ locations }) => {
   const mapRef = useRef(null);
-
+  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
   useEffect(() => {
     if (!window.google) {
       // Load Google Maps script dynamically
-      const script = document.createElement('script');
+      const script = document.createElement("script");
       script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
       script.async = true;
       script.defer = true;

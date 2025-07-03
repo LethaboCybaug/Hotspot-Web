@@ -6,9 +6,11 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // TODO: put your real auth logic here (call API, validate, etc.)
+    
+
+    /*// TODO: put your real auth logic here (call API, validate, etc.)
     // For now we just redirect:
-    navigate("/map");
+    navigate("/map");*/
   };
 
   return (

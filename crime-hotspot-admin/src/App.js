@@ -6,6 +6,8 @@ import Alerts from "./pages/Alerts";
 import "./App.css";
 import GoogleMap from "./pages/GoogleMap";  // Import your GoogleMap component
 import "./App.css";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
 
 const locations = [
   { lat: -25.746111, lng: 28.188056, name: "Pretoria" },
@@ -20,6 +22,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/resolved" element={<Resolved />} />
         <Route path="/alerts" element={<Alerts />} />
+        <Route path="/forgotPassword" element={<ForgotPassword />} />
+        <Route path="/resetPassword" element={<ResetPassword />} />
 
         {/* New route for Google Maps */}
         <Route path="/map" element={<GoogleMap locations={locations} />} />
