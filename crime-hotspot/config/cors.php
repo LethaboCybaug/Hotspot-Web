@@ -6,7 +6,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'], // or specify React Native device IP
+    'allowed_origins' => ['*'], 
 
     'allowed_origins_patterns' => [],
 
