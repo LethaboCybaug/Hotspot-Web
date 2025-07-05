@@ -14,6 +14,7 @@ class Alert extends Model
     protected $fillable = [
         'user_id',
         'message',
+        'image_url',
     ];
 
     // Relationship to User
