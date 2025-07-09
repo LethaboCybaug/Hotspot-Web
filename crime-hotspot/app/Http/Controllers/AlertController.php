@@ -19,6 +19,7 @@ class AlertController extends Controller
         $validated = $request->validate([
             'user_id' => 'required|integer|exists:users,id',
             'message' => 'required|string',
+            'image_url' => 'nullable|string',
         ]);
 
         $alert = Alert::create($validated);
